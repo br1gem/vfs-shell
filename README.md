@@ -43,12 +43,18 @@ xcrun swiftc src/main.swift -o vfs-shell
 ./tests/test_stage1.sh
 ```
 
-## Пример
+## Пример интерактивной работы
 
 ```text
-username@hostname:~$ cd "my folder"
-cd: ["my folder"]
+username@hostname:~$ ls "two words"
+ls: ["two words"]
+username@hostname:~$ cd folder
+cd: ["folder"]
+username@hostname:~$ ls a b
+Ошибка: неверные аргументы команды ls
 username@hostname:~$ unknown
 Ошибка: неизвестная команда unknown
+username@hostname:~$ cd "unfinished
+Ошибка: незакрытая кавычка или незавершённое экранирование
 username@hostname:~$ exit
 ```
