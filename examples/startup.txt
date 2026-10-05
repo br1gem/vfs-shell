@@ -1,0 +1,4 @@
+ls "two words"
+cd folder
+unknown
+ls after-error

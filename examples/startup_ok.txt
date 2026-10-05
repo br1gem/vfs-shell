@@ -1,0 +1,3 @@
+ls "two words"
+cd folder
+exit
