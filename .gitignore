@@ -1,0 +1,6 @@
+/vfs-shell
+.build/
+.swiftpm/
+.DS_Store
+._*
+__MACOSX/
