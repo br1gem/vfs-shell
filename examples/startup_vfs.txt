@@ -1,0 +1,4 @@
+vfs-info
+ls "two words"
+cd docs
+exit

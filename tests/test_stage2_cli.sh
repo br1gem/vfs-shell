@@ -2,9 +2,9 @@
 set -eu
 cd "$(dirname "$0")/.."
 
-output=$(./run.sh --vfs cli.xml --script examples/startup_ok.txt)
+output=$(./run.sh --vfs examples/multiple.xml --script examples/startup_ok.txt)
 
-printf '%s\n' "$output" | grep -Fq 'VFS: cli.xml'
+printf '%s\n' "$output" | grep -Fq 'VFS: examples/multiple.xml'
 printf '%s\n' "$output" | grep -Fq 'Стартовый скрипт: examples/startup_ok.txt'
 printf '%s\n' "$output" | grep -Fq 'ls: ["two words"]'
 printf '%s\n' "$output" | grep -Fq 'cd: ["folder"]'

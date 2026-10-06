@@ -3,9 +3,9 @@ set -eu
 cd "$(dirname "$0")/.."
 
 output=$(./run.sh --config examples/config.ini \
-    --vfs override.xml --script examples/startup_ok.txt)
+    --vfs examples/minimal.xml --script examples/startup_ok.txt)
 
-printf '%s\n' "$output" | grep -Fq 'VFS: override.xml'
+printf '%s\n' "$output" | grep -Fq 'VFS: examples/minimal.xml'
 printf '%s\n' "$output" | grep -Fq 'Стартовый скрипт: examples/startup_ok.txt'
 
 if output=$(./run.sh --config examples/config.ini); then

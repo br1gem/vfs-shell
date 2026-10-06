@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vfs>
+    <file name="hello.txt" encoding="base64">SGVsbG8=</file>
+    <directory name="docs">
+        <file name="guide.txt" encoding="base64">R3VpZGU=</file>
+    </directory>
+</vfs>
